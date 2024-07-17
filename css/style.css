@@ -29,10 +29,12 @@ header .imglogo {
   text-decoration: none;
 }
 header .navbar {
-  background-color: beige;
+  padding: 5px;
+  border: solid 3px rgb(189, 181, 181);
 }
 header .navbar .container-fluid {
   display: flex;
+  background-color: rgb(189, 181, 181);
 }
 header .navbar .container-fluid .nav-item {
   width: 100px;
@@ -233,23 +235,34 @@ main .formulario .formulario__in .btn {
 .nosotros-img .nosotrostext {
   margin: auto;
   text-align: center;
+  background-color: #b5cab6;
 }
 .nosotros-img .nosotrostext h2 {
   text-align: center;
+  padding: 20px 10px;
+  text-decoration: underline #674dad;
 }
 .nosotros-img .nosotrostext p {
   width: 50vw;
   margin: 0 auto;
+  text-decoration: underline #674dad;
   text-align: center;
+  padding: 10px 20px;
+  gap: 2px;
+  font-size: 19px;
 }
 
 .accordion {
   display: flex;
   flex-direction: column;
   justify-items: center;
-  width: 50vw;
+  width: 75vw;
   margin: 0 auto;
   padding: 20px;
+}
+.accordion .accordion-button {
+  color: #674dad;
+  background-color: rgb(189, 181, 181);
 }
 
 footer {

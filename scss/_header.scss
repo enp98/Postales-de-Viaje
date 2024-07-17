@@ -14,9 +14,12 @@ header{
         text-decoration: none;
     }
    .navbar{
-      background-color: beige;
+       padding: 5px;
+       border: solid 3px $color-nav;
+       
       .container-fluid{
         display: flex;
+        background-color: $color-nav;
         
        
         .nav-item{
