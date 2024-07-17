@@ -16,6 +16,7 @@ body {
 header {
   text-align: center;
   background-image: url(../img/more-leaves.png);
+  background-color: beige;
 }
 header .imglogo {
   text-align: center;
@@ -28,10 +29,18 @@ header .imglogo {
   text-decoration: none;
 }
 header .navbar {
-  border: 1px solid black;
+  background-color: beige;
 }
-header .nav-item:hover {
+header .navbar .container-fluid {
+  display: flex;
+}
+header .navbar .container-fluid .nav-item {
+  width: 100px;
+  text-align: center;
+}
+header .navbar .container-fluid .nav-item:hover {
   background-color: #00a9e0;
+  width: 100px;
   border-radius: 20px;
 }
 
@@ -256,6 +265,10 @@ footer .contact {
 }
 
 @media (max-width: 600px) {
+  .navbar {
+    position: sticky;
+    top: 0;
+  }
   .form__c {
     width: 100%;
   }
@@ -320,6 +333,34 @@ footer .contact {
   }
   .main__form .form__c .imput__group .btn:hover {
     background-color: #50e04b;
+  }
+  .nosotros-img #foto1 {
+    width: 100%;
+    height: 300px;
+  }
+  .nosotros-img .nosotrostext {
+    margin: auto;
+    text-align: center;
+  }
+  .nosotros-img .nosotrostext h2 {
+    text-align: center;
+  }
+  .nosotros-img .nosotrostext p {
+    width: 60vw;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .accordion {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 75vw;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .accordion .accordion-button {
+    color: #674dad;
+    background-color: rgb(189, 181, 181);
   }
 }
 @media screen and (max-width: 1920px) {

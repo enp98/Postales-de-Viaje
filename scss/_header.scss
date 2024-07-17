@@ -1,6 +1,7 @@
 header{
     text-align: center;
     background-image: url(../img/more-leaves.png);
+    background-color: beige;
     
     .imglogo{
         text-align: center;
@@ -13,11 +14,24 @@ header{
         text-decoration: none;
     }
    .navbar{
-    border: 1px solid black;
+      background-color: beige;
+      .container-fluid{
+        display: flex;
+        
+       
+        .nav-item{
+            width: 100px;
+            text-align: center;
+        }
+        .nav-item:hover{
+            background-color: #00a9e0;
+            width: 100px;
+            
+            border-radius: 20px;
+            
+        }
+      }  
     }
-    .nav-item:hover{
-        background-color: #00a9e0;
-        border-radius: 20px;
-    }
+    
     
 }
