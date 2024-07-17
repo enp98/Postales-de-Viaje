@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #00a9e0;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+header {
+  text-align: center;
+  background-image: url(../img/more-leaves.png);
+}
+header .imglogo {
+  text-align: center;
+  width: 140px;
+  border: #00a9e0 3px solid;
+  border-radius: 30px;
+  margin: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+header .navbar {
+  border: 1px solid black;
+}
+header .nav-item:hover {
+  background-color: #00a9e0;
+  border-radius: 20px;
+}
+
+main .subt {
+  text-align: center;
+}
+main .subt a {
+  color: rgb(44, 43, 43);
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 20px;
+}
+main .subt .subt__1 {
+  margin-top: 20px;
+  border-radius: 100px;
+  background-color: beige;
+}
+main .subt .subt__2 {
+  border-radius: 100px;
+  background-color: beige;
+  margin-top: 20px;
+}
+main .overlay {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 365px;
+  padding: 0%;
+  margin: 0%;
+  background-image: url(../img/fondo-1.avif);
+  gap: 2em;
+}
+main .img-home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: center;
+  justify-content: space-evenly;
+  gap: 3em;
+}
+main .formulario {
+  width: 190px;
+  text-align: center;
+  margin: 10px auto;
+  font-weight: bold;
+}
+
+/*    merch -- mixin  */
+.container-merch {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  width: 100%;
+  gap: 20px;
+  justify-items: center;
+}
+.container-merch .merch {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  margin: 20px;
+  width: 225px;
+}
+.container-merch .merch img {
+  width: 100%;
+  padding: 20px 20px;
+  border-radius: 10px;
+}
+.container-merch .merch h3 {
+  width: 100%;
+  height: 0;
+  /*width: 100%;*/
+  padding: 20px 20px;
+}
+.container-merch .merch p {
+  width: 100%;
+  padding: 20px 20px;
+}
+
+/*   formulario contacto   */
+.main__form {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__form .form__c {
+  padding: 50px 55px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  text-align: center;
+  width: 340px;
+}
+.main__form .form__c .input__group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.main__form .form__c .input__group .label__c {
+  color: #283629;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.main__form .form__c .input__group .input__co {
+  padding: 17px 25px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  background-color: #edfff0;
+  border: 2px solid #f0faf1;
+  color: #283629;
+  outline: none;
+}
+.main__form .form__c .input__group input::placeholder, .main__form .form__c .input__group textarea::placeholder {
+  color: #b5cab6;
+}
+.main__form .form__c .input__group .btn {
+  font-size: 16px;
+  margin-top: 20px;
+  color: #ffffff;
+  border: 0;
+  border-radius: 25px;
+  background-color: #51d94a;
+  box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+  /*box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);--
+  aplico variable--*/
+  cursor: pointer;
+}
+.main__form .form__c .input__group .btn:hover {
+  background-color: #50e04b;
+}
+
+/*   multimedia   */
+#galeria .col-lg-4 {
+  padding: 25px;
+  margin: 0;
+}
+#galeria .col-lg-4 img {
+  width: 100%;
+  height: 250px;
+}
+#galeria .col-lg-4 img:hover {
+  border: 5px solid #00a9e0;
+}
+
+/*   nosotros   */
+.nosotros-img #foto1 {
+  width: 100%;
+  height: 400px;
+}
+.nosotros-img .nosotrostext {
+  margin: auto;
+  text-align: center;
+}
+.nosotros-img .nosotrostext h2 {
+  text-align: center;
+}
+.nosotros-img .nosotrostext p {
+  width: 50vw;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  width: 50vw;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+footer {
+  background-color: beige;
+  margin-top: auto;
+  bottom: 0;
+  width: 100%;
+}
+footer .contact {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 600px) {
+  .form__c {
+    width: 100%;
+  }
+  .form__c .imput__group .input__co, .form__c .imput__group textarea {
+    width: 100%;
+  }
+  .form__c .imput__group .btn {
+    width: 100%;
+  }
+  header {
+    text-align: center;
+    background-image: url(../img/more-leaves.png);
+    width: 100vh;
+  }
+  .main__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+  }
+  .main__form .form__c {
+    padding: 20px 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 190px;
+  }
+  .main__form .form__c .imput__group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  .main__form .form__c .imput__group .label__c {
+    color: #283629;
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 15px;
+  }
+  .main__form .form__c .imput__group .input__co, .main__form .form__c .imput__group textarea {
+    padding: 17px 25px;
+    width: 150px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: #edfff0;
+    border: 2px solid #f0faf1;
+    color: #283629;
+    outline: none;
+  }
+  .main__form .form__c .imput__group input::placeholder, .main__form .form__c .imput__group textarea::placeholder {
+    color: #b5cab6;
+  }
+  .main__form .form__c .imput__group .btn {
+    width: 150px;
+    font-size: 16px;
+    margin-top: 20px;
+    color: #ffffff;
+    border: 0;
+    border-radius: 25px;
+    background-color: #51d94a;
+    box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+    cursor: pointer;
+  }
+  .main__form .form__c .imput__group .btn:hover {
+    background-color: #50e04b;
+  }
+}
+@media screen and (max-width: 1920px) {
+  header {
+    text-align: center;
+    background-image: url(../img/more-leaves.png);
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

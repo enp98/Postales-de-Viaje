@@ -1,0 +1,209 @@
+main{
+    .subt{
+        text-align: center;
+        a{
+        color: rgb(44, 43, 43);
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-decoration: none;
+        margin-top: 20px;
+       
+        }
+        .subt__1{
+            margin-top: 20px;
+            border-radius: 100px;
+            background-color: beige;
+        } 
+        .subt__2{
+            border-radius: 100px;
+            background-color: beige;
+            margin-top: 20px;
+           }
+    }
+    .overlay{
+        display: flex;
+     flex-direction: column;
+     text-align: center;
+     justify-content: space-evenly;
+     width: 100%;
+     height: 365px;
+     padding: 0%;
+     margin: 0%;
+     background-image: url(../img/fondo-1.avif);
+     gap: 2em;
+    }
+    .img-home{
+        display: flex;
+        flex-wrap: wrap;
+        justify-items: center;
+       justify-content: space-evenly;
+       gap: 3em;   
+    }
+    .formulario{
+        width: 190px;
+        text-align: center;
+        margin: 10px auto;
+        font-weight: bold;
+    
+    }
+    
+            
+    
+    
+}
+
+
+/*    merch -- mixin  */
+
+@mixin sizes($width, $heigth){
+    width: $width;
+    height: $heigth;
+}
+.container-merch{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    width: 100%;
+    gap: 20px;
+    
+    justify-items: center;
+    .merch{
+        box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+        border-radius: 20px;
+        margin: 20px;
+        width: 225px;
+        
+       
+        img{
+            width: 100%;
+          padding: 20px 20px; 
+          border-radius: 10px;
+        }
+        h3{
+            @include sizes(100%, 0);
+            /*width: 100%;*/
+          padding: 20px 20px; 
+        }
+        p{
+            width: 100%;
+            padding: 20px 20px;  
+        }
+    }
+        
+
+
+}
+/*   formulario contacto   */
+.main__form{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .form__c{
+        
+        padding: 50px 55px ;
+        box-shadow: $box-shadow-merch;
+        border-radius: 20px;
+        text-align: center;
+        width: 340px;
+
+        .input__group{
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+
+            .label__c{
+                color: #283629;
+                font-size: 15px;
+                font-weight: 600;
+                margin-bottom: 15px; 
+            }
+            .input__co{
+                padding: 17px 25px;
+                
+                border-radius: 25px;
+                margin-bottom: 20px;
+                background-color: #edfff0;
+                border: 2px solid #f0faf1;
+                color: #283629;
+                outline: none;  
+            }
+          
+
+           
+
+            & input::placeholder, textarea::placeholder{
+                color: #b5cab6;
+            }
+
+            .btn{
+                font-size: 16px;
+                
+                margin-top: 20px;
+                color: #ffffff;
+                border: 0;
+                border-radius: 25px;
+                background-color: #51d94a;
+                box-shadow: $box-shadow-btn;
+                /*box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);--
+                aplico variable--*/
+                cursor: pointer;
+             
+            }
+            .btn:hover{
+                background-color: #50e04b;
+            }
+             
+        }
+       
+    }
+
+}
+
+/*   multimedia   */
+
+#galeria {
+    .col-lg-4{
+    padding: 25px;
+    margin: 0;
+    img{
+        width: 100%;
+        height: 250px;
+    }
+    img:hover{
+        border: 5px solid #00a9e0;
+    }
+
+
+}
+}
+/*   nosotros   */
+.nosotros-img{
+    #foto1{
+        width: 100%;
+        height: 400px;
+    }
+    .nosotrostext{
+        margin: auto;
+        text-align: center;
+        h2{
+            text-align: center;
+        }
+        p{
+            width: 50vw;
+            margin: 0
+            auto;
+            text-align: center;
+            
+        }
+    }
+}
+.accordion{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 50vw;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+

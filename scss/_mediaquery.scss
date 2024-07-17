@@ -1,0 +1,101 @@
+@media (max-width: 600px) {
+  .form__c {
+      width: 100%;
+
+      .imput__group {
+          .input__co, textarea {
+              width: 100%;
+          }
+
+          .btn {
+              width: 100%;
+          }
+      }
+  }
+
+
+
+ 
+  header{
+    text-align: center;
+    background-image: url(../img/more-leaves.png);
+    width: 100vh;
+    }
+
+    .main__form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 20px;
+  
+      .form__c {
+          padding: 20px 20px;
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+          border-radius: 20px;
+          text-align: center;
+          width: 190px;
+  
+          .imput__group {
+              display: flex;
+              flex-direction: column;
+              text-align: left;
+  
+              .label__c {
+                  color: #283629;
+                  font-size: 15px;
+                  font-weight: 300;
+                  margin-bottom: 15px;
+              }
+  
+              .input__co, textarea {
+                  padding: 17px 25px;
+                  width: 150px;
+                  border-radius: 25px;
+                  margin-bottom: 20px;
+                  background-color: #edfff0;
+                  border: 2px solid #f0faf1;
+                  color: #283629;
+                  outline: none;
+              }
+  
+              & input::placeholder, textarea::placeholder {
+                  color: #b5cab6;
+              }
+  
+              .btn {
+                  width: 150px;
+                  font-size: 16px;
+                  margin-top: 20px;
+                  color: #ffffff;
+                  border: 0;
+                  border-radius: 25px;
+                  background-color: #51d94a;
+                  box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+                  cursor: pointer;
+              }
+  
+              .btn:hover {
+                  background-color: #50e04b;
+              }
+          }
+      }
+    }
+  
+}
+ 
+
+
+
+
+
+
+
+
+
+  
+  @media screen and ( max-width: 1920px )
+    {header{
+    text-align: center;
+    background-image: url(../img/more-leaves.png);
+    width: 100%;
+  }}
