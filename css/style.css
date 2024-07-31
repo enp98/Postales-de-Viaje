@@ -296,6 +296,9 @@ footer .redes-container .redes img {
   padding: 2px;
   margin: 5px;
 }
+footer .redes-container .redes img:hover {
+  border: 2px solid black;
+}
 
 @media (max-width: 600px) {
   .navbar {
