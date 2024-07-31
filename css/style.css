@@ -269,14 +269,32 @@ main .formulario .formulario__in .btn {
 
 footer {
   background-color: beige;
-  margin-top: auto;
   bottom: 0;
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 footer .contact {
-  text-align: center;
+  text-align: left;
   display: flex;
   flex-direction: column;
+}
+footer .contact h4 {
+  font-size: small;
+}
+footer .redes-container {
+  display: flex;
+  flex-direction: row;
+}
+footer .redes-container .redes {
+  gap: 4px;
+}
+footer .redes-container .redes img {
+  width: 40px;
+  border-radius: 20px;
+  padding: 2px;
+  margin: 5px;
 }
 
 @media (max-width: 600px) {
